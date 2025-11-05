@@ -5,7 +5,7 @@ const Trang1 = () => {
   const navigate = useNavigate();
   return (
     <div style={{ padding: "20px" }}>
-      <h2>Danh sÃ¡ch sáº£n pháº©m</h2>
+      <h2>Danh sách sản phẩm</h2>
       <div
         style={{
           display: "grid",

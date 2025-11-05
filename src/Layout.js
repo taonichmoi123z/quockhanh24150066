@@ -4,25 +4,26 @@ import "./assets/css/fonts.css";
 import MenuTop from "./layouts/MenuTop";
 import MenuBox from "./layouts/MenuBox";
 import Footer from "./layouts/Footer";
+
 const Layout = () => {
   return (
-    <body>
+    <div>
       <header id="header" style={{ minHeight: 169 }}>
-        <div class="header_top">
-          <div class="container_main">
+        <div className="header_top">
+          <div className="container_main">
             <MenuTop />
           </div>
         </div>
 
         <div id="main_menu"></div>
 
-        <div class="header">
-          <div class="container_main">
-            <div class="logo">
+        <div className="header">
+          <div className="container_main">
+            <div className="logo">
               <a href="/">
                 <img
-                  src="https://giadinh.edu.vn/upload/photo/logogdu-02-5690.png"
-                  alt="Logo"
+                  src="https://genk.mediacdn.vn/2019/9/18/lmht-15687833481821692890713.jpg"
+                  alt="League of Legends Logo"
                 />
               </a>
             </div>
@@ -34,14 +35,14 @@ const Layout = () => {
         </div>
       </header>
 
-      <div class="news-home">
-        <div class="container_main" style={{ minHeight: 5500 }}>
+      <div className="news-home">
+        <div className="container_main" style={{ minHeight: 5500 }}>
           <Outlet />
         </div>
       </div>
 
       <Footer />
-    </body>
+    </div>
   );
 };
 
